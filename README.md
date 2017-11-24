@@ -4,6 +4,7 @@ Sistema de Eventos encomendado pela Morena.
 
 [![Build Status](https://travis-ci.org/rfdeoliveira/eventex.svg?branch=master)](https://travis-ci.org/rfdeoliveira/eventex)
 [![codebeat badge](https://codebeat.co/badges/f0127aef-b2e0-4d4d-b3e8-fab3a506b98b)](https://codebeat.co/projects/github-com-rfdeoliveira-eventex-master)
+[![CodeFactor](https://www.codefactor.io/repository/github/rfdeoliveira/eventex/badge)](https://www.codefactor.io/repository/github/rfdeoliveira/eventex)
 
 ## Como desenvolver?
 
