@@ -4,14 +4,18 @@
 <section>
     <div class="talks content row padding-bottom-3 desktop-12 container">
         <h2>Manhã</h2>
-        <h3>10:00 - Título da Palestra</h3>
-        <h4>Por <a href="/palestrantes/ronaldo-oliveira/">Ronaldo Oliveira</a></h4>
-        <p>Descrição da palestra.</p>
+        {% for talk in morning_talks %}
+        {% include 'core/talk_list_snippet.html' with talk=talk only %}
+        {% empty %}
+        <p>Ainda não existem palestras da manhã.</p>
+        {% endfor %}
 
         <h2>Tarde</h2>
-        <h3>13:00 - Título da Palestra</h3>
-        <h4>Por <a href="/palestrantes/ronaldo-oliveira/">Ronaldo Oliveira</a></h4>
-        <p>Descrição da palestra.</p>
+        {% for talk in afternoon_talks %}
+        {% include 'core/talk_list_snippet.html' with talk=talk only %}
+        {% empty %}
+        <p>Ainda não existem palestras da tarde.</p>
+        {% endfor %}
     </div>
 </section>
 {% endblock content %}
