@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from eventex.core.models import Speaker, Talk, Course
+from eventex.core.models import Speaker, Talk
 
 
 def home(request):
@@ -16,6 +16,5 @@ def talk_list(request):
     context = {
         'morning_talks': Talk.objects.in_the_morning(),
         'afternoon_talks': Talk.objects.in_the_afternoon(),
-        'courses': Course.objects.all(),
     }
     return render(request, 'core/talk_list.html', context)
