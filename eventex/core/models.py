@@ -30,7 +30,8 @@ class Contact(models.Model):
         (PHONE, 'Telefone'),
     )
 
-    speaker = models.ForeignKey('Speaker', verbose_name='palestrante')
+    speaker = models.ForeignKey('Speaker', verbose_name='palestrante',
+                                on_delete=models.CASCADE)
     kind = models.CharField('tipo', max_length=1, choices=KINDS)
     value = models.CharField('valor', max_length=255)
 
